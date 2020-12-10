@@ -53,12 +53,12 @@ module.exports = {
 
             payment_methods : {
                 excluded_payment_methods : [
-                    { id : 'visa'}
+                    { id : 'amex'}
                 ],
                 excluded_payment_types : [
                     { id : 'atm'}
                 ],
-                installments : 12
+                installments : 6
             },
 
             back_urls : {
@@ -89,11 +89,11 @@ module.exports = {
             items : [
                 {
                     id : 1234,
-                    picture_url : 'https://mercado-pago-t.herokuapp.com/images/products/jordan.jpg',
                     title : 'Nombre del producto',
-                    description : 'Descripcion del producto',
-                    unit_price : 1500,
-                    quantity: 1
+                    description : 'Dispositivo móvil de Tienda e-commerce',
+                    picture_url : 'https://mercado-pago-t.herokuapp.com/images/products/jordan.jpg',
+                    quantity: 1,
+                    unit_price : 1500
                 }
             ],
 
