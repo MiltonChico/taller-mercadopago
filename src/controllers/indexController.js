@@ -72,17 +72,17 @@ module.exports = {
             auto_return : 'approved',
 
             payer : {
-                name : 'Ryan',
-                surname : 'Chico',
+                name : 'Lalo',
+                surname : 'Landa',
                 email : 'test_user_63274575@testuser.com',
                 phone : {
                     area_code : '11',
-                    number : 55556666
+                    number : 22223333
                 },
                 address : {
-                    zip_code : '1234',
-                    street_name : 'Monroe',
-                    street_number : 860,
+                    zip_code : '1111',
+                    street_name : 'False',
+                    street_number : 123,
                 }
             },
 
