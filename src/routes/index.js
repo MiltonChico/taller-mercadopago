@@ -15,6 +15,7 @@ router.post('/comprar', indexController.comprar)
 //Confirmacion Compra
 router.get('/callback', indexController.callback)
 
+
 router.post('/notifications', indexController.notifications)
 
 module.exports = router;

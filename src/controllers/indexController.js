@@ -20,7 +20,11 @@ module.exports = {
         console.log(req.query)
 
         if (req.query.status.includes('success')){
-            return res.render('success')
+            return res.render('success',{
+                payment_type : req.query.payment_type,
+                external_reference : req.query.external_reference,
+                collection_id : req.query.collection_id,
+            })
         }
         if (req.query.status.includes('pending')){
             return res.render('pending')
@@ -43,7 +47,7 @@ module.exports = {
         const host = 'https://mercado-pago-t.herokuapp.com/'
         //https://mercado-pago-t.herokuapp.com/
         //http://localhost:3000/
-        const url = host + 'callback?=status='
+        const url = host + 'callback?status='
 
         let preference = {
 
@@ -63,7 +67,7 @@ module.exports = {
                 failure : url + 'failure',
             },
 
-            notification_url : url + 'notifications',
+            notification_url : host + 'notifications',
 
             auto_return : 'approved',
 
