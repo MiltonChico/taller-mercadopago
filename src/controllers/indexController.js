@@ -17,8 +17,9 @@ module.exports = {
     },
     
     callback : (req, res) => {
+        
         console.log(req.query)
-
+        
         if (req.query.status.includes('success')){
             return res.render('success',{
                 payment_type : req.query.payment_type,
