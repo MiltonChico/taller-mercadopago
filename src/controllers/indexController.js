@@ -93,7 +93,7 @@ module.exports = {
                     description : 'Dispositivo móvil de Tienda e-commerce',
                     picture_url : 'https://mercado-pago-t.herokuapp.com/images/products/jordan.jpg',
                     quantity: 1,
-                    unit_price : 1500
+                    unit_price : 1500,
                 }
             ],
 
